@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Pragati Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Pragati</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact Us</a></div>
+            </div>
+        </div>
+        
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="girl-img.jpeg" alt="personal" class="img-info">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Pragati</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a Software Developer</div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, perferendis quas consectetur possimus maxime consequatur cupiditate eos dolorum molestias praesentium error exercitationem rem labore illo, in dolor, odio corporis excepturi?</p>
+                   
+                   
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <!-- Highlights Section -->
+<section id="highlights">
+    <h2>My Highlights</h2>
+    <div class="highlights-container">
+    
+        <!-- Skill Card -->
+    <div class="highlight-card">
+      <h3>Project</h3>
+      <h4>Online Auction System</h4>
+      <p>The Online Auction System is a web-based platform that allows users to participate in auctions, place bids & track items in real-time</p>
+    </div>
+
+    <!-- Skill Card -->
+    <div class="highlight-card">
+      <h3>Skills</h3>
+      <p>JavaScript, React, Node.js, Python, Machine Learning</p>
+    </div>
+
+    <!-- Service Card -->
+    <div class="highlight-card">
+      <h3>Services</h3>
+      <p>Web Development, Backend Development, API Design</p>
+    </div>
+
+    <!-- Blog Card -->
+    <div class="highlight-card">
+      <h3>Blogs</h3>
+      <p>Latest articles on tech, coding tips, and project tutorials</p>
+    </div>
+  </div>
+
+</section>
+
+
+                <!-- Contact Us Section -->
+        <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post" class="contact-form">
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        </section>
+
+        <div class="footer-container">
+            <footer>
+                <p> &copy; 2025 Your Name. All rights reserved</p>
+            </footer>
+        </div>
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <script>
+          AOS.init({disable:true});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+
+                <script src="script.js"></script>
+
+</body>
+</html>

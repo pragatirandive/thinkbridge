@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #d6d9dc;
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  color:blue;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+label {
+  display: block;
+  margin: 8px 0 4px;
+  margin-bottom: 0.3rem;
+  font-weight:bold ;
+  color: #111;
+  background: #fff;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #0056b3;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #006400;
+}
+
+#criteria {
+  max-width: 350px;
+  font-size: 14px;
+}
+
+#criteria label {
+  display: flex;   
+  align-items: center;
+  gap: 0.5rem;               
+  color: #222;           
+  font-weight: normal;
+}
+
+#criteria input[type="checkbox"] {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background: white
+}
+
+#criteria input[type="checkbox"]:checked {
+  background-color: #006400;
+  border-color: #006400;
+}
+
+#criteria input[type="checkbox"]:checked::after {
+  content: "✔";
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  left: 2px;
+  top: -1px;
+}
+
+#criteria input[type="checkbox"]:checked ~ span {
+  color: #006400;
+  font-weight: 600;
+}

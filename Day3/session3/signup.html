@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="signup_style.css">
+</head>
+<body>
+    <header>
+      <h2>Sign Up</h2>
+    </header>
+  
+   
+  <form action="#" method="post">
+      
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname"   placeholder="Enter your name:" required  >
+      
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter email:" required  >
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" 
+                                            aria-describedby="phoneHelp"
+                                            >
+    
+      
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required  >
+      
+     
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"
+             pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[A-Za-z]).{8,}$"
+             aria-describedby="passwordHelp"
+             title="Password must be at least 8 characters long, contain at least one number, one special character, and one letter."
+             required>
+             
+    <fieldset id="criteria" aria-live="polite">
+        <legend>Password must contain:</legend>
+        <label><input type="checkbox" id="rule-length" ><span>Minimum 8 characters</span> </label>
+        <label><input type="checkbox" id="rule-uppercase" ><span> At least 1 uppercase letter</span></label>
+        <label><input type="checkbox" id="rule-number" ><span>At least 1 number</span> </label>
+        <label><input type="checkbox" id="rule-special" > <span>At least 1 special character (!@#$%)</span> </label>
+    </fieldset>
+
+      
+      <label for="confirmpassword">Confirm Password:</label>
+      <input type="password" id="confirmpassword" name="confirmpassword" minlength="6" required >
+      
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required >
+        <option value="option">--Select--</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+      </select>
+
+    <button type="submit">Sign Up</button>
+
+  <!-- <script src="signup.js"></script> -->
+</body>
+</html>
