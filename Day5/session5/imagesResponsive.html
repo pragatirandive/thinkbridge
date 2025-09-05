@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Image & Button Demo</title>
+  <link rel="stylesheet" href="components.css">
+</head>
+<body>
+
+  <h1>Interactive Image & Button</h1>
+
+  <div class="image-container">
+    <img 
+      src="images/rose.png"
+      alt="Rose image"
+      srcset="
+    images/rose-400.png 400w,
+    images/rose-800.png 800w,
+    images/rose-1200.png 1200w"
+      class="interactive-image">
+
+    <p>Rose image adapts to screen size</p>
+  </div>
+
+  <div class="image-container">
+    <img 
+      src="images/tree.jpg"
+      alt="tree image"
+      class="interactive-image">
+
+    <p>tree image adapts to screen size</p>
+  </div>
+  
+  <div class="button-container">
+    <button class="button">Click Me</button>
+  </div>
+
+</body>
+</html>
