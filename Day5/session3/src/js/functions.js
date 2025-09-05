@@ -43,7 +43,7 @@ function VarScope() {
   if (true) {
     var x = 9;
   }
-  console.log("var x:", x); // Accessible ✅
+  console.log("var x:", x); // Accessible 
 }
 VarScope();
 
@@ -77,4 +77,4 @@ function factorial(n) {
   return n * factorial(n - 1);    // Recursive step
 }
 
-console.log("fact:", factorial(5)); // ✅ 120
+console.log("fact:", factorial(5)); //  120
