@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Delightful to use</title>
+</head>
+<body>
+    <header>
+        <h2>Explorer Front-end Technologies Keywords</h2>
+          <div class="hamburger" id="hamburger">&#9776;</div>         <!-- Hamburger icon -->
+
+        <nav class="navbar">
+            <div class="nav-links">
+            <a href="#html-section" target="_self">HTML</a>
+            <a href="#css-section">CSS</a>
+            <a href="#js-section">JavaScript</a>
+            <a href="#feedback-section">Feedback</a>
+
+            </div>
+        </nav>
+      </header>
+
+    <main>
+
+    <!-- HTML Section -->
+    <section id="html-section" class="content-section">
+        <h2>HTML </h2>
+        <p>HTML (HyperText Markup Language) is the standard language used to create and structure web pages. 
+        It uses elements called tags to define headings, paragraphs, links, images, and other content. 
+        HTML provides the basic structure of a webpage, which is then styled using CSS and made interactive using JavaScript.</p>
+
+       <div class="btn-container">
+            <h4>Explorer HTML</h4>
+             <button class="go-btn" >Go to Page</button>
+        </div>
+        
+
+    </section>
+
+    <!-- CSS Section -->
+    <section id="css-section" class="content-section">
+        <h2>CSS </h2>
+        <p>
+        CSS (Cascading Style Sheets) is used to style and format HTML elements on a webpage. 
+        It controls colors, fonts, layouts, spacing, and overall presentation. 
+        CSS allows developers to make websites visually appealing and responsive across different screen sizes.
+        </p>   
+
+        <div class="btn-container">
+            <h4>Explorer CSS</h4>
+             <button class="go-btn" onclick="window.location.href='htmlReference.html'">Go to Page</button>
+        </div>
+
+       
+
+    </section>
+
+    <!-- JavaScript Section -->
+    <section id="js-section" class="content-section">
+        <h2>JavaScript </h2>
+            <p>
+            JavaScript (JS) is a powerful programming language used to make web pages interactive and dynamic. 
+            It allows you to manipulate HTML and CSS, handle user events, fetch data from servers, and build complex web applications. 
+            JavaScript is one of the core technologies of the web, alongside HTML and CSS.
+            </p>
+
+         <div class="btn-container">
+            <h4>Explorer JavaScript</h4>
+             <button  class="go-btn" >Go to Page</button>
+        </div>
+
+  </section>
+
+  <!-- Form Section -->
+<section id="feedback-section" class="content-section">
+  <h2>Feedback Form</h2>
+  <p>Let us know your thoughts or submit questions about HTML, CSS, and JavaScript!</p>
+  
+  <form id="feedback-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+    <label for="topic">Topic:</label>
+    <select id="topic" name="topic" required>
+      <option value="" disabled selected>Select a topic</option>
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="js">JavaScript</option>
+    </select>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Your message here....." rows="5" required></textarea>
+    
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</section>
+
+</main>
+    
+    <footer class="footer">
+       <p class="footer-text">&copy; 2025 Web Dev Keywords | Created by Pragati</p>
+  </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
