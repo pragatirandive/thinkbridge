@@ -29,12 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// Select the back button by ID
-const backButton = document.getElementById('back-btn');
+//submit button
+let btn = document.getElementById("submit");
+console.log(btn);
 
-// Add click event listener
-backButton.addEventListener('click', () => {
-    // Redirect to the previous page or index.html
-    window.location.href = 'index.html';
+btn.addEventListener("click", ()=>{
+    alert("Form sucessfully submitted");
 });
-
