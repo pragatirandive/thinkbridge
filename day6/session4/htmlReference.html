@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Reference</title>
+    <link rel="stylesheet" href="StyleReference.css">
+</head>
+<body>
+    <h1>HTML Tags Reference</h1>
+
+    <!-- Document Structure -->
+    <details>
+        <summary>1. Document Structure / Meta Tags</summary>
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code> - Defines HTML version</li>
+            <li><code>&lt;html&gt;</code> - Root element</li>
+            <li><code>&lt;head&gt;</code> - Metadata container</li>
+            <li><code>&lt;title&gt;</code> - Document title</li>
+            <li><code>&lt;meta&gt;</code> - Metadata (charset, viewport, SEO)</li>
+            <li><code>&lt;link&gt;</code> - External CSS or resources</li>
+            <li><code>&lt;style&gt;</code> - Internal CSS</li>
+            <li><code>&lt;script&gt;</code> - JavaScript inclusion</li>
+        </ul>
+    </details>
+
+    <!-- Headings -->
+    <details>
+        <summary>2. Headings</summary>
+        <p>HTML has six heading levels:</p>
+        <h1>Heading 1 (h1)</h1>
+        <h2>Heading 2 (h2)</h2>
+        <h3>Heading 3 (h3)</h3>
+        <h4>Heading 4 (h4)</h4>
+        <h5>Heading 5 (h5)</h5>
+        <h6>Heading 6 (h6)</h6>
+    </details>
+
+    <!-- Paragraph & Text -->
+    <details>
+        <summary>3. Paragraph & Text</summary>
+        <p>This is a paragraph using <code>&lt;p&gt;</code> tag.</p>
+        <p>Example of <strong>strong text</strong> and <em>emphasized text</em>.</p>
+        <p>Highlighted text using <mark>mark</mark> tag.</p>
+    </details>
+
+    <!-- Links -->
+    <details>
+        <summary>4. Links</summary>
+        <p>HTML uses <code>&lt;a&gt;</code> tag for links:</p>
+        <p>
+            <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+        </p>
+        <p>Link with internal anchor:</p>
+        <p>
+            <a href="#top">Go to top of page</a>
+        </p>
+    </details>
+
+    <!-- Images & Multimedia -->
+    <details>
+        <summary>5. Images & Multimedia</summary>
+        <p>HTML uses <code>&lt;img&gt;</code> to show images:</p>
+        <img src="Day6//images//tech-image.jpg" alt="Placeholder Image" width="150">
+        <p>Responsive image example using <code>&lt;picture&gt;</code>:</p>
+        <picture>
+            <source media="(min-width:650px)" srcset="https://via.placeholder.com/300">
+            <img src="https://via.placeholder.com/150" alt="Responsive Image">
+        </picture>
+        <p>Audio example:</p>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Video example:</p>
+        <video width="320" height="240" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </details>
+
+    <!-- Lists -->
+<details>
+    <summary>6. Lists</summary>
+
+    <!-- Ordered List -->
+    <p>Ordered List using <code>&lt;ol&gt;</code> and <code>&lt;li&gt;</code>:</p>
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+
+    <!-- Unordered List -->
+    <p>Unordered List using <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code>:</p>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
+
+    <!-- Description List -->
+    <p>Description List using <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code>:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+    </dl>
+
+</details>
+
+<!-- ****************************css reference********************************** -->
+
+    <h1>CSS Reference</h1>
+
+    <!-- Selectors -->
+    <details id="selectors">
+        <summary>1. Selectors</summary>
+        <p><strong>Element Selector:</strong> selects all elements of a type</p>
+        <p style="background:#eee; padding:5px;">p { color: blue; }</p>
+
+        <p><strong>Class Selector:</strong> selects all elements with a class</p>
+        <p style="background:#eee; padding:5px;">.highlight { background-color: yellow; }</p>
+
+        <p><strong>ID Selector:</strong> selects a specific element by ID</p>
+        <p style="background:#eee; padding:5px;">#main { font-size: 20px; }</p>
+
+        <p><strong>Universal Selector:</strong> selects all elements</p>
+        <p style="background:#eee; padding:5px;">* { margin: 0; padding: 0; }</p>
+    </details>
+
+    <!-- Colors -->
+    <details id="colors">
+        <summary>2. Colors</summary>
+        <p><strong>Named Color:</strong> <span style="color:red;">red text</span></p>
+        <p><strong>Hex Color:</strong> <span style="color:#00ff00;">#00ff00 text</span></p>
+        <p><strong>RGB Color:</strong> <span style="color:rgb(0,0,255);">rgb(0,0,255) text</span></p>
+        <p><strong>RGBA Color:</strong> <span style="color:rgba(255,0,0,0.5);">rgba(255,0,0,0.5) text</span></p>
+    </details>
+
+    <!-- Paragraph -->
+    <details id="paragraph">
+        <summary>3. Paragraph</summary>
+        <p><strong>Text alignment:</strong> center</p>
+        <p style="text-align:center;">This text is centered.</p>
+        <p><strong>Line height:</strong></p>
+        <p style="line-height:2;">This paragraph has a line-height of 2.</p>
+        <p><strong>Text decoration:</strong> underline, overline, line-through</p>
+        <p style="text-decoration: underline;">Underline</p>
+        <p style="text-decoration: overline;">Overline</p>
+        <p style="text-decoration: line-through;">Line-through</p>
+    </details>
+
+    <!-- Box Model -->
+    <details id="boxmodel">
+        <summary>4. Box Model</summary>
+        <p>Box model includes <strong>margin, border, padding, content</strong>:</p>
+        <div style="width:150px; padding:10px; border:2px solid #333; margin:10px; background:#ddd;">
+            Content Box
+        </div>
+    </details>
+
+    <!-- Flexbox -->
+    <details id="flexbox">
+        <summary>5. Flexbox</summary>
+        <p>Flex container example:</p>
+        <div style="display:flex; gap:10px; background:#eee; padding:10px;">
+            <div style="background:#c33; color:#fff; padding:10px;">Item 1</div>
+            <div style="background:#3c3; color:#fff; padding:10px;">Item 2</div>
+            <div style="background:#33c; color:#fff; padding:10px;">Item 3</div>
+        </div>
+    </details>
+
+    <!-- Grid -->
+    <details id="grid">
+        <summary>6. Grid</summary>
+        <p>Grid container example:</p>
+        <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; background:#eee; padding:10px;">
+            <div style="background:#c33; color:#fff; padding:10px;">Cell 1</div>
+            <div style="background:#3c3; color:#fff; padding:10px;">Cell 2</div>
+            <div style="background:#33c; color:#fff; padding:10px;">Cell 3</div>
+        </div>
+    </details>
+
+
+    <!-- *******************************JS *************************************** -->
+   <h1>JavaScript Reference</h1>
+
+    <!-- Variables -->
+    <details id="variables">
+        <summary>1. Variables</summary>
+        <p>JavaScript has three types of variable declarations:</p>
+        <p><code>var</code> - Function-scoped variable</p>
+        <p><code>let</code> - Block-scoped variable</p>
+        <p><code>const</code> - Block-scoped constant</p>
+        <pre><code>let name = "Pragati";
+const age = 22;
+var city = "Pune";</code></pre>
+    </details>
+
+    <!-- Data Types -->
+    <details id="datatypes">
+        <summary>2. Data Types</summary>
+        <p>JavaScript has the following data types:</p>
+        <ul>
+            <li>String: <code>"Hello"</code></li>
+            <li>Number: <code>123</code></li>
+            <li>Boolean: <code>true/false</code></li>
+            <li>Undefined: <code>let x;</code></li>
+            <li>Null: <code>null</code></li>
+            <li>Object: <code>{name: "Pragati"}</code></li>
+            <li>Array: <code>[1, 2, 3]</code></li>
+        </ul>
+    </details>
+
+    <!-- Paragraph / Output -->
+    <details id="paragraph">
+        <summary>3. Paragraph / Output</summary>
+        <p>Output in JavaScript:</p>
+        <pre><code>console.log("Hello World");</code></pre>
+    </details>
+
+    <!-- Operators -->
+    <details id="operators">
+        <summary>4. Operators</summary>
+        <ul>
+            <li>Arithmetic: <code>+ - * / %</code></li>
+            <li>Assignment: <code>=, +=, -=</code></li>
+            <li>Comparison: <code>==, ===, !=, !==, &gt;, &lt;</code></li>
+            <li>Logical: <code>&& || !</code></li>
+        </ul>
+    </details>
+
+    <!-- Functions -->
+    <details id="functions">
+        <summary>5. Functions</summary>
+        <p>Function declaration:</p>
+        <pre><code>function greet(name) {
+    return "Hello " + name;
+}</code></pre>
+        <p>Arrow function:</p>
+        <pre><code>const greet = (name) =&gt; "Hello " + name;</code></pre>
+    </details>
+
+    <!-- Loops -->
+    <details id="loops">
+        <summary>6. Loops</summary>
+        <p>For loop:</p>
+        <pre><code>for(let i=0; i&lt;5; i++) {
+    console.log(i);
+}</code></pre>
+        <p>While loop:</p>
+        <pre><code>let i = 0;
+while(i &lt; 5) {
+    console.log(i);
+    i++;
+}</code></pre>
+    </details>
+
+    <!-- Events -->
+    <details id="events">
+        <summary>7. Events</summary>
+        <p>Click event example:</p>
+        <button onclick="alert('Button clicked!')">Click me</button>
+    </details>
+
+    <!-- DOM Manipulation -->
+    <details id="dom">
+        <summary>8. DOM Manipulation</summary>
+        <p>Change paragraph text using JavaScript:</p>
+        <p id="demo">This is a paragraph.</p>
+        <button onclick="document.getElementById('demo').innerText='Text changed!'">Change Text</button>
+    </details>
+
+        <button  onclick="window.location.href='index.html'"> Back to Page 1</button>
+
+
+       
+</body>
+</html>
