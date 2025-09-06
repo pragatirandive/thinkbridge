@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Images & Interactions</title>
+  <link rel="stylesheet" href="components.css">
+</head>
+<body>
+
+  <h1>Responsive Images with Micro-Interactions</h1>
+
+  <div class="image-container">
+    <img 
+      src="C:\Users\praga\ThinkBridge\Day5\session5\images\flower.png"
+      srcset="
+        images/hero-400.jpg 400w,
+        images/hero-800.jpg 800w,
+        images/hero-1200.jpg 1200w"
+      sizes="(max-width: 600px) 100vw, 
+             (max-width: 1200px) 50vw, 
+             800px"
+      alt="Scenic mountain view"
+      class="interactive-image">
+
+    <p>Mountain view adapts to screen size</p>
+
+    <img 
+      src="rose.png"
+      srcset="
+        images/beach-400.jpg 400w,
+        images/beach-800.jpg 800w,
+        images/beach-1200.jpg 1200w"
+      sizes="(max-width: 600px) 100vw, 
+             (max-width: 1200px) 50vw, 
+             800px"
+      alt="Beautiful beach view"
+      class="interactive-image">
+
+    <p>Beach image is responsive</p>
+
+    <img 
+      src="tree.png"
+      srcset="
+        images/city-400.jpg 400w,
+        images/city-800.jpg 800w,
+        images/city-1200.jpg 1200w"
+      sizes="(max-width: 600px) 100vw, 
+             (max-width: 1200px) 50vw, 
+             800px"
+      alt="City skyline at sunset"
+      class="interactive-image">
+
+    <p>City skyline adapts to device width</p>
+  </div>
+
+  <div class="button-container">
+    <button class="button">Click Me</button>
+    <button class="button">Hover Me</button>
+  </div>
+
+</body>
+</html>

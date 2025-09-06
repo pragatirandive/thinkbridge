@@ -29,17 +29,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-//go to back btn
-// Wait for DOM to load
-document.addEventListener("DOMContentLoaded", () => {
-    // Back buttons
-    const backButtons = document.querySelectorAll(".back");
+// Select the back button by ID
+const backButton = document.getElementById('back-btn');
 
-    backButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            // Navigate to the index page
-            window.location.href = "index.html"; // Change path if needed
-        });
-    });
+// Add click event listener
+backButton.addEventListener('click', () => {
+    // Redirect to the previous page or index.html
+    window.location.href = 'index.html';
 });
 
